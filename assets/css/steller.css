@@ -11750,4 +11750,38 @@ pre {
   }
 }
 
+.widget {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  gap: 2rem; /* Space between widget items */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.widget-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  text-align: center; /* Center text below icon */
+}
+
+.social-item {
+  font-size: 2rem; /* Ensure consistent icon size */
+  display: inline-block;
+}
+
+.social-text {
+  font-size: 1rem; /* Consistent text size */
+  margin: 0.5rem 0; /* Space between icon and text */
+}
+
+/* Media queries for mobile view */
+@media (max-width: 768px) {
+  .social-item {
+    font-size: 2.5rem; /* Adjust icon size for mobile if needed */
+  }
+
+  .social-text {
+    font-size: 1.2rem; /* Adjust text size for mobile if needed */
+  }
+}
 
