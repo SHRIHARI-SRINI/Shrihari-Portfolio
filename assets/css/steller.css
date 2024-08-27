@@ -11785,3 +11785,41 @@ pre {
   }
 }
 
+.socials {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  gap: 1rem; /* Space between icons */
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem; /* Width of the circle */
+  height: 2.5rem; /* Height of the circle */
+  border: 0.1rem solid #000000; /* Black border around the circle */
+  border-radius: 50%; /* Make it a circle */
+  background-color: transparent; /* Ensure no background color for the outer circle */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.icon-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem; /* Size of the inner white circle */
+  height: 2rem; /* Size of the inner white circle */
+  background-color: #ffffff; /* White background for the inner circle */
+  border-radius: 50%; /* Make it a circle */
+  color: #000000; /* Black color for the icons */
+}
+
+.icon-background i {
+  font-size: 1.2rem; /* Size of the icons */
+}
+
+@media (max-width: 768px) {
+  .social-icon {
+    width: 2.5rem; /* A
+
+
