@@ -11709,17 +11709,21 @@ pre {
 }
 /* Base font size for all screen sizes */
 
+
 :root {
-  --base-font-size: 63px; /* Default base size */
+  --base-font-size: 3rem; /* Set a base font size in rem units */
 }
 
+/* General styles for the dual-color-name */
 .dual-color-name {
   font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
   font-weight: bold; /* Makes the text bold */
-  font-size: calc(var(--base-font-size) + 1vw); /* Responsive font size */
+  font-size: var(--base-font-size); /* Base font size */
   display: flex; /* Use flexbox to align items */
   align-items: center; /* Center items vertically */
   white-space: nowrap; /* Prevent wrapping */
+  overflow-wrap: break-word; /* Allow breaking long words */
+  word-break: break-word; /* Ensure words break to prevent overflow */
 }
 
 .name-part {
@@ -11735,12 +11739,15 @@ pre {
 /* Media queries for specific screen sizes */
 @media (max-width: 768px) {
   .dual-color-name {
-    font-size: calc(var(--base-font-size) + 0.5vw); /* Adjust for smaller screens */
+    font-size: calc(var(--base-font-size) * 1); /* Increase font size by 20% for smaller screens */
+    white-space: normal; /* Allow wrapping on smaller screens */
   }
 }
 
 @media (min-width: 1200px) {
   .dual-color-name {
-    font-size: calc(var(--base-font-size) + 1.5vw); /* Adjust for larger screens */
+    font-size: calc(var(--base-font-size) * 1.1); /* Adjust for larger screens */
   }
 }
+
+
